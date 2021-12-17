@@ -8,7 +8,7 @@ using SampleCRUDApi.Data;
 
 namespace Tests.Controllers
 {
-    public class CompaniesControllersTests
+    public class CompaniesControllerTests
     {
         private CompanyEntity DefaultEntry => new CompanyEntity
         {
