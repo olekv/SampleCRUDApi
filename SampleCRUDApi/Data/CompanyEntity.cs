@@ -3,12 +3,12 @@ using System.ComponentModel.DataAnnotations;
 
 namespace SampleCRUDApi.Data
 {
-    public class Company : BaseEntity
+    public class CompanyEntity : BaseEntity
     {
         public int TenantId { get; set; }
         
         [StringLength(255)] public string Industry { get; set; }
-        [StringLength(255), Required] public string Name { get; set; }
+        [Required, StringLength(255)] public string Name { get; set; }
         [StringLength(255)] public string CompanyIconUri { get; set; }
         [StringLength(255)] public string Website { get; set; }
         public string CompanyInfo { get; set; }
